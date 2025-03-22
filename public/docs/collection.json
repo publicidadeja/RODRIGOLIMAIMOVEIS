@@ -1,0 +1,815 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "site-rapido.local"
+        }
+    ],
+    "info": {
+        "name": "Laravel",
+        "_postman_id": "6c7fff4a-d0a2-4900-a803-99d0c71b38dd",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Authentication",
+            "description": "",
+            "item": [
+                {
+                    "name": "Register",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/register",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/register"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            },
+                            {
+                                "key": "Api-Version",
+                                "value": "v1"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"first_name\": \"ullam\",\n    \"last_name\": \"amet\",\n    \"username\": \"eius\",\n    \"email\": \"aut\",\n    \"password\": \"iure\",\n    \"phone\": \"aut\"\n}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Login",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/login",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/login"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            },
+                            {
+                                "key": "Api-Version",
+                                "value": "v1"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"email\": \"molestiae\",\n    \"password\": \"error\",\n    \"login\": \"ipsum\"\n}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Forgot password",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/password\/forgot",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/password\/forgot"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            },
+                            {
+                                "key": "Api-Version",
+                                "value": "v1"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"email\": \"ratione\"\n}"
+                        },
+                        "description": "Send a reset link to the given user.",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Verify email",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/verify-account",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/verify-account"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            },
+                            {
+                                "key": "Api-Version",
+                                "value": "v1"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"email\": \"amet\",\n    \"token\": \"qui\"\n}"
+                        },
+                        "description": "Mark the authenticated user's email address as verified.",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Resend email verification",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/resend-verify-account-email",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/resend-verify-account-email"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            },
+                            {
+                                "key": "Api-Version",
+                                "value": "v1"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"email\": \"nihil\"\n}"
+                        },
+                        "description": "Resend the email verification notification.",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Logout",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/logout",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/logout"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            },
+                            {
+                                "key": "Api-Version",
+                                "value": "v1"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Blog",
+            "description": "",
+            "item": [
+                {
+                    "name": "Search post",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/search",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/search"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            },
+                            {
+                                "key": "Api-Version",
+                                "value": "v1"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"q\": \"est\"\n}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "List posts",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/posts",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/posts"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            },
+                            {
+                                "key": "Api-Version",
+                                "value": "v1"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "List categories",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/categories",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/categories"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            },
+                            {
+                                "key": "Api-Version",
+                                "value": "v1"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "List tags",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/tags",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/tags"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            },
+                            {
+                                "key": "Api-Version",
+                                "value": "v1"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Filters posts",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/posts\/filters",
+                            "query": [
+                                {
+                                    "key": "page",
+                                    "value": "1",
+                                    "description": "Current page of the collection. Default: 1",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "per_page",
+                                    "value": "1",
+                                    "description": "Maximum number of items to be returned in result set.Default: 10",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "search",
+                                    "value": "quia",
+                                    "description": "Limit results to those matching a string.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "after",
+                                    "value": "adipisci",
+                                    "description": "Limit response to posts published after a given ISO8601 compliant date.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "author",
+                                    "value": "quos",
+                                    "description": "Limit result set to posts assigned to specific authors.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "author_exclude",
+                                    "value": "eos",
+                                    "description": "Ensure result set excludes posts assigned to specific authors.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "before",
+                                    "value": "nisi",
+                                    "description": "Limit response to posts published before a given ISO8601 compliant date.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "exclude",
+                                    "value": "corporis",
+                                    "description": "Ensure result set excludes specific IDs.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "include",
+                                    "value": "repellendus",
+                                    "description": "Limit result set to specific IDs.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "order",
+                                    "value": "occaecati",
+                                    "description": "Order sort attribute ascending or descending. Default: desc .One of: asc, desc",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "order_by",
+                                    "value": "eligendi",
+                                    "description": "Sort collection by object attribute. Default: updated_at. One of: author, created_at, updated_at, id,  slug, title",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "categories",
+                                    "value": "et",
+                                    "description": "Limit result set to all items that have the specified term assigned in the categories taxonomy.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "categories_exclude",
+                                    "value": "quo",
+                                    "description": "Limit result set to all items except those that have the specified term assigned in the categories taxonomy.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "tags",
+                                    "value": "quae",
+                                    "description": "Limit result set to all items that have the specified term assigned in the tags taxonomy.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "tags_exclude",
+                                    "value": "illo",
+                                    "description": "Limit result set to all items except those that have the specified term assigned in the tags taxonomy.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "featured",
+                                    "value": "nihil",
+                                    "description": "Limit result set to items that are sticky.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/posts\/filters?page=1&per_page=1&search=quia&after=adipisci&author=quos&author_exclude=eos&before=nisi&exclude=corporis&include=repellendus&order=occaecati&order_by=eligendi&categories=et&categories_exclude=quo&tags=quae&tags_exclude=illo&featured=nihil"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            },
+                            {
+                                "key": "Api-Version",
+                                "value": "v1"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get post by slug",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/posts\/:slug",
+                            "query": [
+                                {
+                                    "key": "slug",
+                                    "value": "distinctio",
+                                    "description": "Find by slug of post.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/posts\/:slug?slug=distinctio",
+                            "variable": [
+                                {
+                                    "id": "slug",
+                                    "key": "slug",
+                                    "value": "exercitationem",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            },
+                            {
+                                "key": "Api-Version",
+                                "value": "v1"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Filters categories",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/categories\/filters",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/categories\/filters"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            },
+                            {
+                                "key": "Api-Version",
+                                "value": "v1"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Get category by slug",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/categories\/:slug",
+                            "query": [
+                                {
+                                    "key": "slug",
+                                    "value": "officia",
+                                    "description": "Find by slug of category.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/categories\/:slug?slug=officia",
+                            "variable": [
+                                {
+                                    "id": "slug",
+                                    "key": "slug",
+                                    "value": "modi",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            },
+                            {
+                                "key": "Api-Version",
+                                "value": "v1"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Profile",
+            "description": "",
+            "item": [
+                {
+                    "name": "Get the user profile information.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/me",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/me"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            },
+                            {
+                                "key": "Api-Version",
+                                "value": "v1"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update profile",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/me",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/me"
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            },
+                            {
+                                "key": "Api-Version",
+                                "value": "v1"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"first_name\": \"eos\",\n    \"last_name\": \"ipsum\",\n    \"email\": \"omnis\",\n    \"dob\": \"illo\",\n    \"gender\": \"quae\",\n    \"description\": \"ut\",\n    \"phone\": \"quos\"\n}"
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update Avatar",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/update-avatar",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/update-avatar"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            },
+                            {
+                                "key": "Api-Version",
+                                "value": "v1"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "multipart\/form-data"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "avatar",
+                                    "src": [],
+                                    "type": "file"
+                                }
+                            ]
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update password",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/change-password",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/change-password"
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": "Bearer {token}"
+                            },
+                            {
+                                "key": "Api-Version",
+                                "value": "v1"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"password\": \"culpa\"\n}"
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}

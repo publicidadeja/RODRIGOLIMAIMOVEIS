@@ -1,0 +1,24 @@
+{
+    "name": "srapid/menu",
+    "description": "Menu package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Srapid\\Menu\\": "src"
+        }
+    },
+    "require": {
+        "srapid/platform": "*@dev",
+        "srapid/theme": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Srapid\\Menu\\Providers\\MenuServiceProvider"
+            ],
+            "aliases": {
+                "Menu": "Srapid\\Menu\\Facades\\MenuFacade"
+            }
+        }
+    }
+}

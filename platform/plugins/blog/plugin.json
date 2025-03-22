@@ -1,0 +1,9 @@
+{
+    "name": "Blog",
+    "namespace": "Srapid\\Blog\\",
+    "provider": "Srapid\\Blog\\Providers\\BlogServiceProvider",
+    "author": "siterapido.com.br",
+    "url": "https://siterapido.com.br",
+    "version": "5.8",
+    "description": "Manage posts, categories, tags"
+}

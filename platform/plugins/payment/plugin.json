@@ -1,0 +1,9 @@
+{
+    "name": "Payment",
+    "namespace": "Srapid\\Payment\\",
+    "provider": "Srapid\\Payment\\Providers\\PaymentServiceProvider",
+    "author": "siterapido.com.br",
+    "url": "https://siterapido.com.br",
+    "version": "1.1",
+    "description": "Payment plugin"
+}

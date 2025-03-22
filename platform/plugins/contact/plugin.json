@@ -1,0 +1,9 @@
+{
+    "name": "Contact Form",
+    "namespace": "Srapid\\Contact\\",
+    "provider": "Srapid\\Contact\\Providers\\ContactServiceProvider",
+    "author": "siterapido.com.br",
+    "url": "https://siterapido.com.br",
+    "version": "5.8",
+    "description": "Contact Form"
+}

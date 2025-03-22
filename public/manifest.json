@@ -1,0 +1,21 @@
+{
+  "name": "Rodrigo Lima - Negócios Imobiliários",
+  "short_name": "Rodrigo Lima - Negócios Imobiliários",
+  "description": "Sistema de busca e gerenciamento de imóveis",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#d8b529",
+  "icons": [
+    {
+      "src": "/images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

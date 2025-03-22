@@ -1,0 +1,9 @@
+{
+  "name": "Captcha",
+  "namespace": "Srapid\\Captcha\\",
+  "provider": "Srapid\\Captcha\\Providers\\CaptchaServiceProvider",
+  "author": "siterapido.com.br",
+  "url": "https://siterapido.com.br",
+  "version": "5.8",
+  "description": "Captcha for higher security"
+}

@@ -1,0 +1,24 @@
+{
+    "name": "srapid/seo-helper",
+    "description": "SEO helper package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Srapid\\SeoHelper\\": "src"
+        }
+    },
+    "require": {
+        "srapid/platform": "*@dev",
+        "srapid/theme": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Srapid\\SeoHelper\\Providers\\SeoHelperServiceProvider"
+            ],
+            "aliases": {
+                "SeoHelper": "Srapid\\SeoHelper\\Facades\\SeoHelperFacade"
+            }
+        }
+    }
+}

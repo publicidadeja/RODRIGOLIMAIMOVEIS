@@ -1,0 +1,9 @@
+{
+    "name": "Language",
+    "namespace": "Srapid\\Language\\",
+    "provider": "Srapid\\Language\\Providers\\LanguageServiceProvider",
+    "author": "siterapido.com.br",
+    "url": "https://siterapido.com.br",
+    "version": "5.8",
+    "description": "Multilingual"
+}

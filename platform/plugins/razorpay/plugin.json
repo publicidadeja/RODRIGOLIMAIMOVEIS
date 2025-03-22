@@ -1,0 +1,10 @@
+{
+    "name": "Razorpay Payment Gateway",
+    "namespace": "Srapid\\Razorpay\\",
+    "provider": "Srapid\\Razorpay\\Providers\\RazorpayServiceProvider",
+    "author": "siterapido.com.br",
+    "url": "https://siterapido.com.br",
+    "version": "1.0",
+    "description": "Razorpay payment gateway integration",
+    "require": ["payment"]
+}

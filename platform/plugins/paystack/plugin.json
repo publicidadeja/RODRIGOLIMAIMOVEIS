@@ -1,0 +1,10 @@
+{
+    "name": "Paystack Payment Gateway",
+    "namespace": "Srapid\\Paystack\\",
+    "provider": "Srapid\\Paystack\\Providers\\PaystackServiceProvider",
+    "author": "siterapido.com.br",
+    "url": "https://siterapido.com.br",
+    "version": "1.0",
+    "description": "Paystack payment gateway integration",
+    "require": ["payment"]
+}

@@ -1,0 +1,21 @@
+{
+	"name": "srapid/sitemap",
+	"description": "Sitemap package for Laravel.",
+	"license": "MIT",
+	"require": {
+	},
+	"autoload": {
+		"psr-4": {
+			"Srapid\\Sitemap\\": "src"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Srapid\\Sitemap\\Providers\\SitemapServiceProvider"
+			]
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}

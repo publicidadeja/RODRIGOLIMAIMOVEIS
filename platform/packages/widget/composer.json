@@ -1,0 +1,25 @@
+{
+    "name": "srapid/widget",
+    "description": "Widget package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Srapid\\Widget\\": "src"
+        }
+    },
+    "require": {
+        "srapid/platform": "*@dev",
+        "srapid/theme": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Srapid\\Widget\\Providers\\WidgetServiceProvider"
+            ],
+            "aliases": {
+                "Widget": "Srapid\\Widget\\Facades\\WidgetFacade",
+                "WidgetGroup": "Srapid\\Widget\\Facades\\WidgetGroupFacade"
+            }
+        }
+    }
+}

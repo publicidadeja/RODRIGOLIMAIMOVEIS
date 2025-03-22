@@ -1,0 +1,21 @@
+{
+    "name": "srapid/page",
+    "description": "Page package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Srapid\\Page\\": "src"
+        }
+    },
+    "require": {
+        "srapid/platform": "*@dev",
+        "srapid/revision": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Srapid\\Page\\Providers\\PageServiceProvider"
+            ]
+        }
+    }
+}

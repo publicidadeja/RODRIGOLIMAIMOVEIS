@@ -1,0 +1,9 @@
+{
+    "name": "Social Login",
+    "namespace": "Srapid\\SocialLogin\\",
+    "provider": "Srapid\\SocialLogin\\Providers\\SocialLoginServiceProvider",
+    "author": "siterapido.com.br",
+    "url": "https://siterapido.com.br",
+    "version": "5.8",
+    "description": "Easier and faster login with Facebook, LinkedIn, Github or Google."
+}

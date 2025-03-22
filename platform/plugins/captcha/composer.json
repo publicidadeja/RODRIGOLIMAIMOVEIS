@@ -1,0 +1,8 @@
+{
+  "name": "srapid/captcha",
+  "description": "Captcha for higher security",
+  "homepage": "https://siterapido.com.br",
+  "require": {
+    "google/recaptcha": "^1.2"
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "name": "srapid/theme",
+    "description": "Theme package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Srapid\\Theme\\": "src"
+        }
+    },
+    "require": {
+        "srapid/platform": "*@dev",
+        "srapid/sitemap": "*@dev",
+        "srapid/widget": "*@dev",
+        "srapid/slug": "*@dev",
+        "srapid/seo-helper": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Srapid\\Theme\\Providers\\ThemeServiceProvider",
+                "Srapid\\Theme\\Providers\\RouteServiceProvider"
+            ],
+            "aliases": {
+                "Theme": "Srapid\\Theme\\Facades\\ThemeFacade",
+                "ThemeOption": "Srapid\\Theme\\Facades\\ThemeOptionFacade",
+                "ThemeManager": "Srapid\\Theme\\Facades\\ManagerFacade",
+                "AdminBar": "Srapid\\Theme\\Facades\\AdminBarFacade",
+                "SiteMapManager": "Srapid\\Theme\\Facades\\SiteMapManagerFacade"
+            }
+        }
+    }
+}

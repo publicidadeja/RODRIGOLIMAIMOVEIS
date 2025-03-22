@@ -1,0 +1,32 @@
+<?php
+
+return [
+    'title' => 'Contas',
+    'description' => 'Configurações para membros',
+    'verify_account_email' => 'Verificar o e-mail da conta?',
+    'square_unit' => 'Unidade de quadrado',
+    'square_unit_none' => 'Nenhum',
+    'square_unit_meter' => 'Metros Quadrados (m²)',
+    'square_unit_feet' => 'Pés quadrados (ft2)',
+    'square_unit_yard' => 'Jarda quadrada (yd2)',
+    'general' => 'Configurações Gerais',
+    'general_description' => 'Configurações básicas para imóveis',
+    'real_estate_convert_money_to_text_enabled' => 'Converter dinheiro em texto se for muito grande?',
+    'thousands_separator' => 'separador de milhares',
+    'decimal_separator' => 'Separador decimal',
+    'separator_period' => 'Período (.)',
+    'separator_comma' => 'Vírgula (,)',
+    'separator_space' => 'Espaço (,)',
+    'real_estate_enabled_register' => 'Permitir que os visitantes registem uma conta e publiquem as suas propriedades?',
+    'email' => [
+        'title' => 'Imóveis',
+        'description' => 'Configuração de e-mail imobiliário',
+    ],
+    'property_expired_after_days' => 'Tempo de expiração da propriedade (dias)',
+    'enable_post_approval' => 'Ativar aprovação de postagem?',
+    'enable_credits_system' => 'Habilitar sistema de créditos (agentes precisam comprar créditos para postar seus imóveis)',
+    'enable_auto_detect_visitor_currency' => 'Ativar detecção automática de moeda do visitante?',
+    'display_views_count_in_detail_page' => 'Contagem de visualizações de exibição na página de detalhes?',
+    'enable_recaptcha_in_register_page' => 'Ativar o Recaptcha na página de registro?',
+    'enable_recaptcha_in_register_page_description' => 'Precisa configurar o Captcha em Admin -> Configurações -> Geral primeiro.',
+];

@@ -1,0 +1,42 @@
+<?php
+
+return [
+    'name' => 'Importação em massa',
+    'loading_text' => 'Importando',
+    'imported_successfully' => 'Importado com sucesso.',
+    'please_choose_the_file_mime' => 'Por favor, escolha o arquivo mime :types',
+    'please_choose_the_file' => 'Por favor, escolha o arquivo',
+    'start_import' => 'Iniciar importação',
+    'note' => 'Observação!',
+    'warning_before_importing' => 'Se esta é a primeira vez que você usa esse recurso, leia a documentação ou entre em contato com o Administrador para obter acesso à funcionalidade correta!',
+    'results' => 'Resultado: :success sucessos, :failed falhas',
+    'failures' => 'Falhas',
+    'tables' => [
+        'import' => 'Importar',
+    ],
+    'template' => 'Template',
+    'rules' => 'Regras',
+    'choose_file_with_mime' => 'Escolha o arquivo com mime: (:types)',
+    'choose_file' => 'Escolher arquivo',
+    'menu' => 'Importar locais',
+    'download-csv-file' => 'Baixar modelo CSV',
+    'download-excel-file' => 'Baixe o modelo do Excel',
+    'downloading' => 'Baixando...',
+    'export' => [
+        'template' => [
+            'input_error' => 'Erro de entrada',
+            'number_not_allowed' => 'Número não é permitido!',
+            'allowed_input' => 'Entrada permitida',
+            'prompt_decimal' => 'Somente números ou decimais são aceitos e maiores ou iguais a :min.',
+            'prompt_whole_number' => 'Somente números são aceitos e maiores ou iguais a :min.',
+            'prompt_list' => 'Escolha um valor na lista suspensa.',
+            'pick_from_list' => 'Escolha da lista',
+            'value_not_in_list' => 'O valor não está na lista.',
+            'max_text_length' => 'Comprimento máximo do texto',
+            'prompt_max_text_length' => 'Só aceite texto com comprimento menor ou igual a :max.',
+        ],
+    ],
+    'import_failed_description' => 'Falha na importação, verifique os erros abaixo!',
+    'available_enable_multi_language' => 'Disponível apenas quando você ativa "É multilíngue?"',
+    'import_type_required_if' => 'O campo :attribute é obrigatório quando "Import Type" é :value.',
+];

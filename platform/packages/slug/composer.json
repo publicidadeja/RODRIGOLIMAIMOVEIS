@@ -1,0 +1,23 @@
+{
+    "name": "srapid/slug",
+    "description": "Slug/Permalink",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Srapid\\Slug\\": "src"
+        }
+    },
+    "require": {
+        "srapid/platform": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Srapid\\Slug\\Providers\\SlugServiceProvider"
+            ],
+            "aliases": {
+                "SlugHelper": "Srapid\\Slug\\Facades\\SlugHelperFacade"
+            }
+        }
+    }
+}

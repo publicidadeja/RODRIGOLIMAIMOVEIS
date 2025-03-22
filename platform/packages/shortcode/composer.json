@@ -1,0 +1,20 @@
+{
+    "name": "srapid/shortcode",
+    "description": "Shortcode package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Srapid\\Shortcode\\": "src"
+        }
+    },
+    "require": {
+        "srapid/platform": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Srapid\\Shortcode\\Providers\\ShortcodeServiceProvider"
+            ]
+        }
+    }
+}

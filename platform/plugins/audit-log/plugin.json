@@ -1,0 +1,9 @@
+{
+    "name": "Audit Log",
+    "namespace": "Srapid\\AuditLog\\",
+    "provider": "Srapid\\AuditLog\\Providers\\AuditLogServiceProvider",
+    "author": "siterapido.com.br",
+    "url": "https://siterapido.com.br",
+    "version": "5.8",
+    "description": "Record activities logs"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Analytics",
+    "namespace": "Srapid\\Analytics\\",
+    "provider": "Srapid\\Analytics\\Providers\\AnalyticsServiceProvider",
+    "author": "siterapido.com.br",
+    "url": "https://siterapido.com.br",
+    "version": "5.8",
+    "description": "Tracking data from Google Analytics"
+}

@@ -1,0 +1,79 @@
+{
+    "name": "srapid/platform",
+    "description": "Baseado em Laravel Framework.",
+    "keywords": [
+        "srapid",
+        "srapid cms",
+        "srapid platform"
+    ],
+    "homepage": "https://siterapido.com.br",
+    "support": {
+        "issues": "https://siterapido.com.br",
+        "document": "https://siterapido.com.br"
+    },
+    "authors": [
+        {
+            "name": "SiteRapido",
+            "email": "info@siterapido.com.br"
+        }
+    ],
+    "type": "project",
+    "require": {
+        "barryvdh/laravel-dompdf": "^1.0.0",
+        "srapid/assets": "^1.0",
+        "intervention/image": "^2.6",
+        "kris/laravel-form-builder": "1.16.x-dev",
+        "laravelcollective/html": "^6.2",
+        "xantios/mimey": "^2.2",
+        "tightenco/ziggy": "^1.4",
+        "yajra/laravel-datatables-buttons": "^4.13",
+        "yajra/laravel-datatables-oracle": "^9.18",
+        "guzzlehttp/guzzle": "^6.0|^7.0",
+        "mews/purifier": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Srapid\\Support\\": "support/src",
+            "Srapid\\ACL\\": "acl/src",
+            "Srapid\\Base\\": "base/src",
+            "Srapid\\Dashboard\\": "dashboard/src",
+            "Srapid\\Media\\": "media/src",
+            "Srapid\\Setting\\": "setting/src",
+            "Srapid\\Table\\": "table/src",
+            "Srapid\\JsValidation\\": "js-validation/src",
+            "Srapid\\Chart\\": "chart/src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Srapid\\Base\\Providers\\BaseServiceProvider",
+                "Srapid\\Base\\Providers\\CommandServiceProvider",
+                "Srapid\\Base\\Providers\\EventServiceProvider",
+                "Srapid\\Base\\Providers\\BreadcrumbsServiceProvider",
+                "Srapid\\Base\\Providers\\ComposerServiceProvider",
+                "Srapid\\Base\\Providers\\MailConfigServiceProvider",
+                "Srapid\\Base\\Providers\\FormServiceProvider",
+                "Srapid\\Support\\Providers\\SupportServiceProvider",
+                "Srapid\\Table\\Providers\\TableServiceProvider",
+                "Srapid\\ACL\\Providers\\AclServiceProvider",
+                "Srapid\\Dashboard\\Providers\\DashboardServiceProvider",
+                "Srapid\\Media\\Providers\\MediaServiceProvider",
+                "Srapid\\JsValidation\\Providers\\JsValidationServiceProvider",
+                "Srapid\\Chart\\Providers\\ChartServiceProvider"
+            ],
+            "aliases": {
+                "Assets": "Srapid\\Base\\Facades\\AssetsFacade",
+                "BaseHelper": "Srapid\\Base\\Facades\\BaseHelperFacade",
+                "MetaBox": "Srapid\\Base\\Facades\\MetaBoxFacade",
+                "Action": "Srapid\\Base\\Facades\\ActionFacade",
+                "Filter": "Srapid\\Base\\Facades\\FilterFacade",
+                "EmailHandler": "Srapid\\Base\\Facades\\EmailHandlerFacade",
+                "Breadcrumbs": "Srapid\\Base\\Facades\\BreadcrumbsFacade",
+                "JsValidator": "Srapid\\JsValidation\\Facades\\JsValidatorFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

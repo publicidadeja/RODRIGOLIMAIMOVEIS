@@ -1,0 +1,5 @@
+{
+    "name": "srapid/sslcommerz",
+    "description": "SslCommerz payment gateway",
+    "type": "package"
+}

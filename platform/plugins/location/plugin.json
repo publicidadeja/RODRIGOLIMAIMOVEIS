@@ -1,0 +1,9 @@
+{
+    "name": "Location",
+    "namespace": "Srapid\\Location\\",
+    "provider": "Srapid\\Location\\Providers\\LocationServiceProvider",
+    "author": "siterapido.com.br",
+    "url": "https://siterapido.com.br",
+    "version": "1.0",
+    "description": "The description for module location"
+}

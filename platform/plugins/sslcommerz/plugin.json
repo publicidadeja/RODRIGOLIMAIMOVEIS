@@ -1,0 +1,10 @@
+{
+    "name": "SslCommerz Payment Gateway",
+    "namespace": "Srapid\\SslCommerz\\",
+    "provider": "Srapid\\SslCommerz\\Providers\\SslCommerzServiceProvider",
+    "author": "siterapido.com.br",
+    "url": "https://siterapido.com.br",
+    "version": "1.0",
+    "description": "SslCommerz payment gateway integration",
+    "require": []
+}

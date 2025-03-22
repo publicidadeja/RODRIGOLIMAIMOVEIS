@@ -1,0 +1,14 @@
+{
+    "name": "Flex Home",
+    "namespace": "Theme\\FlexHome\\",
+    "description": "Real Estate theme",
+    "author": "Srapid Technologies",
+    "version": "2.32.3",
+    "required_plugins": [
+        "blog",
+        "contact",
+        "language",
+        "location",
+        "real-estate"
+    ]
+}

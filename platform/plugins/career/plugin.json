@@ -1,0 +1,9 @@
+{
+    "name": "Career",
+    "namespace": "Srapid\\Career\\",
+    "provider": "Srapid\\Career\\Providers\\CareerServiceProvider",
+    "author": "siterapido.com.br",
+    "url": "https://siterapido.com.br",
+    "version": "1.0",
+    "description": "Career plugin"
+}

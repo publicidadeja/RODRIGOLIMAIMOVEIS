@@ -1,0 +1,9 @@
+{
+    "name": "Translation",
+    "namespace": "Srapid\\Translation\\",
+    "provider": "Srapid\\Translation\\Providers\\TranslationServiceProvider",
+    "author": "siterapido.com.br",
+    "url": "https://siterapido.com.br",
+    "version": "5.8",
+    "description": "Manage translation text"
+}

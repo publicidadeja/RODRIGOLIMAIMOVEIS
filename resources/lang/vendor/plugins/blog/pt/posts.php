@@ -1,0 +1,30 @@
+<?php
+
+return [
+    'create' => 'Criar nova postagem',
+    'edit' => 'Editar post',
+    'form' => [
+        'name' => 'Nome',
+        'name_placeholder' => 'Nome da postagem (máximo de :c caracteres)',
+        'description' => 'Descrição',
+        'description_placeholder' => 'Breve descrição da postagem (máximo de caracteres :c)',
+        'categories' => 'Categorias',
+        'tags' => 'Tags',
+        'tags_placeholder' => 'Tags',
+        'content' => 'Conteúdo',
+        'is_featured' => 'Está em destaque?',
+        'note' => 'Conteúdo da nota',
+        'format_type' => 'Formato',
+    ],
+    'cannot_delete' => 'A postagem não pôde ser excluída',
+    'post_deleted' => 'Postagem excluída',
+    'posts' => 'Postagens',
+    'post' => 'Publicar',
+    'edit_this_post' => 'Editar esta postagem',
+    'no_new_post_now' => 'Não há nenhum post novo agora!',
+    'menu_name' => 'Postagens',
+    'widget_posts_recent' => 'Postagens recentes',
+    'categories' => 'Categorias',
+    'category' => 'Categoria',
+    'author' => 'Autor',
+];

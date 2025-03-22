@@ -1,0 +1,9 @@
+{
+    "name": "Cookie Consent",
+    "namespace": "Srapid\\CookieConsent\\",
+    "provider": "Srapid\\CookieConsent\\Providers\\CookieConsentServiceProvider",
+    "author": "siterapido.com.br",
+    "url": "https://siterapido.com.br",
+    "version": "5.8",
+    "description": "Cookie Consent"
+}
